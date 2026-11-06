@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <a href="#contenido">Saltar al contenido</a>
+
+    <header>
+        <h1>Contacto</h1>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="entorno.html">Mi entorno</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section>
+            <h2>Envíame un mensaje</h2>
+            <p>Rellena el siguiente formulario para contactar conmigo.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="motivo">Motivo del contacto:</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="">Selecciona un motivo</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="proyecto">Propuesta de proyecto</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sobre tu mensaje</legend>
+
+                    <p>¿Cómo me has conocido?</p>
+
+                    <input type="radio" id="internet" name="origen"
+                           value="internet" required>
+                    <label for="internet">Internet</label>
+
+                    <input type="radio" id="redes" name="origen"
+                           value="redes">
+                    <label for="redes">Redes sociales</label>
+
+                    <input type="radio" id="otros" name="origen"
+                           value="otros">
+                    <label for="otros">Otros</label>
+
+                    <p>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje"
+                                  rows="5" maxlength="500"
+                                  required></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="checkbox" id="privacidad"
+                           name="privacidad" required>
+                    <label for="privacidad">
+                        Acepto la política de privacidad.
+                    </label>
+                </p>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Contacto por correo</h2>
+            <p>
+                También puedes escribirme directamente a
+                <a href="mailto:tu-correo@ejemplo.com">
+                    tu-correo@ejemplo.com
+                </a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mi portfolio personal</p>
+    </footer>
+</body>
+</html>
